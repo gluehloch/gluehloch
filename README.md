@@ -1,5 +1,8 @@
 # gluehloch
-´´´
-npm install
-bower install
-´´´
+
+Die Entwicklungsumgebung wird mit den folgenden Befehlen eingerichtet:
+
+    npm install
+    bower install
+
+
