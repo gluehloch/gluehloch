@@ -1,0 +1,20 @@
+<div>
+    <h1>{{season.name}} {{season.year}}</h1>
+    <p>
+      Die Detailansicht einer Meisterschaft.
+    </p>
+</div>
+<div>
+    <table class="table table-striped" ng-controller="SeasonCtrl">
+      <tr>
+        <th>Index</th>
+        <th>Datum</th>
+        <th>Spieltag</th>
+      </tr>
+      <tr ng-repeat="round in season.rounds">
+        <td>{{round.index}}</td>
+        <td>{{round.dateTime}}</td>
+        <td><a href="#/season/round/{{round.id}}" class="thumb">Detail</a></td>
+      </tr>
+    </table>
+</div>

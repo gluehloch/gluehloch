@@ -1,0 +1,25 @@
+<div>
+  <form role="form">
+    <div class="form-group">
+      <label for="inputSeasonNameFilter">Filter</label>
+        <input data-ng-model="inputSeasonNameFilter"
+          type="text" class="form-control">
+    </div>
+  </form>
+</div>
+<div>
+    <table class="table table-striped" ng-controller="SeasonsCtrl">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Jahrgang</th>
+        <th>Details</th>
+      </tr>
+      <tr ng-repeat="season in seasons | filter:inputSeasonNameFilter">
+        <td>{{season.id}}</td>
+        <td>{{season.name}}</td>
+        <td>{{season.year}}</td>
+        <td><a href="#/season/{{season.id}}" class="thumb">Detail</a></td>
+      </tr>
+    </table>
+</div>
