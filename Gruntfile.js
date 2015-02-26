@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         watch: {
             // files: [ './src/js/**/*.js'],
             files: [ './src/**'],
-            tasks: ['jshint', 'copy', 'sync'],
+            tasks: [/*'jshint',*/ 'copy'/*, 'sync'*/],
             options: { interval: 5007 }
         },
         sync: {

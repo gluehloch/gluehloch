@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de" ng-app="gluehloch">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AWTools Projects</title>
+<link rel="stylesheet"
+  href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/gluehloch.css" />
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angularjs/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="js/gluehloch.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="HeaderCtrl">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">AWTools</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li ng-class="{ active: isActive('/')}"><a href="#home">Home</a></li>
+          <li ng-class="{ active: isActive('/season/all')}"><a href="#season/all">Parent POM</a></li>
+          <li ng-class="{ active: isActive('/team/all')}"><a href="#team/all">Commons</a></li>
+          <li ng-class="{ active: isActive('/groups')}"><a href="#groups">Swing</a></li>
+          <li ng-class="{ active: isActive('/users')}"><a href="#users">betoffice</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div id="awtools-header" class="bs-docs-header">
+    <div class="container">
+      <h1>AWTools Homepage by Gluehloch</h1>
+      <p>This is the real world.</p>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="container" ng-view>
+    <div class="starter-template">
+      <h1>AWTools Projects</h1>
+      <p class="lead">
+        Use this document as a way to quickly start any new project.<br>
+        All you get is this text and a mostly barebones HTML document.
+      </p>
+    </div>
+  </div>
+  <!-- /.container -->
+
+</body>
+</html>
