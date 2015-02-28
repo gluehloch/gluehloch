@@ -2,18 +2,28 @@ body {
   padding-top: 50px;
 }
 
-body > nav {
-    background-color: #333
+.navbar-nav > li:hover {
+    background-color: #193200;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #2E5C00;
+}
+
+.navbar {
+    background-color: #333B00;
 }
 
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+    padding: 40px 15px;
+    text-align: center;
 }
 
 
 .theme-showcase .navbar .container {
-  width: auto;
+    width: auto;
 }
 
 .bs-docs-header, .bs-docs-masthead {
@@ -31,6 +41,6 @@ body > nav {
     color: #FFF;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
     background-color: #333B00;
-    background-image: linear-gradient(to bottom, #333B00 0px, #33330F 100%);
+    background-image: linear-gradient(to bottom, #273300 0px, #2C3300 100%);
     background-repeat: repeat-x;
 }
