@@ -51,10 +51,15 @@ gluehlochApp.config(['$routeProvider', function($routeProvider) {
                 controller: 'AWToolsCtrl',
                 templateUrl: 'awtools.html'
             })
-        .when('/awtools-homegen',
+        .when('/swing',
             {
-                controller: 'AWToolsCtrl',
-                templateUrl: 'awtools.html'
+                controller: 'SwingCtrl',
+                templateUrl: 'swing.html'
+            })
+        .when('/betoffice',
+            {
+                controller: 'BetofficeCtrl',
+                templateUrl: 'betoffice.html'
             })
         /*
         .when('/betoffice',
