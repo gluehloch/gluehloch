@@ -12,7 +12,7 @@ var gluehlochApp = angular.module('gluehloch', ['ngRoute']);
  * *** CONTROLLER ***
  */
 
-gluehlochApp.controller('IndexCtrl', ['$scope', function($scope) {
+gluehlochApp.controller('IntroCtrl', ['$scope', function($scope) {
 }]);
 
 gluehlochApp.controller('PomCtrl', ['$scope', function($scope) {
@@ -25,7 +25,7 @@ gluehlochApp.controller('MiscCtrl', ['$scope', '$location', function($scope, $lo
 }]);
 
 gluehlochApp.controller('HeaderCtrl', ['$scope', '$location', function($scope, $location) {
-    $scope.isActive = function (viewLocation) { 
+    $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
     };
 }]);
@@ -38,7 +38,7 @@ gluehlochApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/',
             {
-                controller: 'IndexCtrl',
+                controller: 'IntroCtrl',
                 templateUrl: 'intro.html'
             })
         .when('/pom',
