@@ -1,46 +1,26 @@
 <div class="starter-template">
-
-<!--
-    <div class="bs-docs-header" id="content">
-      <div class="container">
-        <h1>Getting started</h1>
-        <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
-
-      </div>
-    </div>
--->
-
-<h1>AWTools Parent POMs</h1>
-<h2>A selection of POM configurations!</h2>
-<p class="lead">
-  This is the start point for some incredible unuseful
-  projects. This site is powered by AngularJS and Bootstrap.
-  With support from nodejs, npm and grunt.
-</p>
-<h2>Content</h2>
-<p>
-  <img src="./img/aw_logo.png"/>
-</p>
+  <h2>AWTools Parent POMs</h2>
+  <p>
+    At the moment i use these two POMs for my projects. The first
+    POM defines some some common build settings (like file encoding,
+    jdk version, compiler settings, code coverage, my preferred license,
+    some remote repositories and all the plugin versions to build and
+    report). The second POM has the first POM as parent. The second POM
+    defines dependencies (log4j, commons-lang, commons-io, junit, mockito).
+  </p>
   <div class="list-group">
     <a href="#" class="list-group-item active">
-      <h4 class="list-group-item-heading">List group item heading</h4>
+      <h4 class="list-group-item-heading">POM without lib dependencies (Master POM)</h4>
       <p class="list-group-item-text">...</p>
     </a>
     <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">List group item heading</h4>
+      <h4 class="list-group-item-heading">POM with lib dependencies (AWTools POM)</h4>
       <p class="list-group-item-text">...</p>
     </a>
     <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">List group item heading</h4>
-      <p class="list-group-item-text">...</p>
-    </a>
-    <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">List group item heading</h4>
-      <p class="list-group-item-text">...</p>
-    </a>
-    <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">List group item heading</h4>
-      <p class="list-group-item-text">...</p>
+      <h4 class="list-group-item-heading">POM for betoffice</h4>
+      <p class="list-group-item-text">A special POM for the betoffice projects.
+       Parent is the POM without lib dependencies.</p>
     </a>
   </div>
 </div>
