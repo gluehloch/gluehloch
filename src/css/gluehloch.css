@@ -17,11 +17,34 @@ body {
 }
 
 .starter-template {
-    padding: 40px 15px;
+    /*padding: 40px 15px;*/
+    padding: 0px 0px;
     text-align: left; /* center */
 
 }
 
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #FFF;
+    background-color: #C2A385;
+    border-color: #C2A385;
+}
+
+a.list-group-item:focus, a.list-group-item:hover {
+    color: #555;
+    text-decoration: none;
+    background-color: #C2A385;
+    border-color: #C2A385;
+    /* #E0D1C2;*/
+}
+
+a.list-group-item.active {
+    background-color: #A37547;
+    border-color: A37547;
+}
+
+
+/*
 a.list-group-item:focus, a.list-group-item:hover {
     color: #555;
     text-decoration: none;
@@ -31,6 +54,7 @@ a.list-group-item:focus, a.list-group-item:hover {
 a.list-group-item.active {
     background-color: #4D704D;
 }
+*/
 
 
 .theme-showcase .navbar .container {
