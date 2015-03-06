@@ -24,6 +24,9 @@ gluehlochApp.controller('AWToolsCtrl', ['$scope', '$routeParams', function($scop
 gluehlochApp.controller('MiscCtrl', ['$scope', '$location', function($scope, $location) {
 }]);
 
+gluehlochApp.controller('HistoryCtrl', ['$scope', '$location', function($scope, $location) {
+}]);
+
 gluehlochApp.controller('HeaderCtrl', ['$scope', '$location', function($scope, $location) {
     $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
@@ -77,6 +80,11 @@ gluehlochApp.config(['$routeProvider', function($routeProvider) {
             {
                 controller: 'MiscCtrl',
                 templateUrl: 'misc.html'
+            })
+        .when('/history',
+            {
+                controller: 'HistoryCtrl',
+                templateUrl: 'history.html'
             })
         .otherwise({ redirectTo: '/' });
 }]);
