@@ -16,6 +16,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sync');
 
+    grunt.loadNpmTasks('grunt-ssh');
+    grunt.loadNpmTasks('grunt-ssh-deploy');
+
     grunt.registerTask('default', ['clean:main', 'copy:main', 'jshint', 'compress', 'copy:localDevServer']);
 
     grunt.initConfig({
@@ -71,8 +74,8 @@ module.exports = function(grunt) {
                     ],
                     dest: pathLocalDevServer,
                 }],
-                //pretend: true, // Don't do any IO. Before you run the task with `updateAndDelete` PLEASE MAKE SURE it doesn't remove too much. 
-                verbose: true // Display log messages when copying files 
+                //pretend: true, // Don't do any IO. Before you run the task with `updateAndDelete` PLEASE MAKE SURE it doesn't remove too much.
+                verbose: true // Display log messages when copying files
             }
         }
     });

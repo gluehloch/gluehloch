@@ -16,6 +16,8 @@
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-deploy": "^0.1.7",
+    "grunt-ssh": "^0.12.1",
+    "grunt-ssh-deploy": "^0.2.3",
     "http-server": "^0.6.1"
   },
   "scripts": {
