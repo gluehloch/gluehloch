@@ -24,12 +24,18 @@ gluehlochApp.controller('AWToolsCtrl', ['$scope', '$routeParams', function($scop
 gluehlochApp.controller('SwingCtrl', ['$scope', '$location', function($scope, $location) {
 }]);
 
+gluehlochApp.controller('BetofficeCtrl', ['$scope', '$location', function($scope, $location) {
+}]);
+
 gluehlochApp.controller('MiscCtrl', ['$scope', '$location', function($scope, $location) {
 }]);
 
 gluehlochApp.controller('HistoryCtrl', ['$scope', '$location', function($scope, $location) {
 }]);
 
+/**
+ * The controller for the header menu bar. Controlling the highlighting.
+ */
 gluehlochApp.controller('HeaderCtrl', ['$scope', '$location', function($scope, $location) {
     $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
@@ -42,7 +48,7 @@ gluehlochApp.controller('HeaderCtrl', ['$scope', '$location', function($scope, $
 
 gluehlochApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
-        .when('/',
+        .when('/home',
             {
                 controller: 'IntroCtrl',
                 templateUrl: 'intro.html'
@@ -88,6 +94,6 @@ gluehlochApp.config(['$routeProvider', function($routeProvider) {
             {
                 controller: 'HistoryCtrl',
                 templateUrl: 'history.html'
-            })
-        .otherwise({ redirectTo: '/index.html' });
+            });
+        //.otherwise({ redirectTo: 'intro.html' });
 }]);
