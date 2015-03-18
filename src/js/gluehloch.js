@@ -21,6 +21,9 @@ gluehlochApp.controller('PomCtrl', ['$scope', function($scope) {
 gluehlochApp.controller('AWToolsCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
 }]);
 
+gluehlochApp.controller('SwingCtrl', ['$scope', '$location', function($scope, $location) {
+}]);
+
 gluehlochApp.controller('MiscCtrl', ['$scope', '$location', function($scope, $location) {
 }]);
 
