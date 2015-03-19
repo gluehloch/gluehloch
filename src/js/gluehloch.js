@@ -38,6 +38,9 @@ gluehlochApp.controller('HistoryCtrl', ['$scope', '$location', function($scope, 
  */
 gluehlochApp.controller('HeaderCtrl', ['$scope', '$location', function($scope, $location) {
     $scope.isActive = function (viewLocation) {
+        if ($location.path() === '/' && viewLocation === '/home') {
+            return true;
+        }
         return viewLocation === $location.path();
     };
 }]);
@@ -48,6 +51,11 @@ gluehlochApp.controller('HeaderCtrl', ['$scope', '$location', function($scope, $
 
 gluehlochApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
+        .when('/',
+            {
+                controller: 'IntroCtrl',
+                templateUrl: 'intro.html'
+            })
         .when('/home',
             {
                 controller: 'IntroCtrl',
