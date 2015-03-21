@@ -102,6 +102,7 @@ gluehlochApp.config(['$routeProvider', function($routeProvider) {
             {
                 controller: 'HistoryCtrl',
                 templateUrl: 'history.html'
-            });
-        //.otherwise({ redirectTo: 'intro.html' });
+            })
+        .otherwise({ redirectTo: 'home' });
+
 }]);
